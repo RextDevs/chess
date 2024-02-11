@@ -19,7 +19,6 @@ public class CHESS {
   ArrayList<Comparable> sortedData = null;
 
   public static void main(String[] args) {
-    args = new String[] { "a=s", "t=n", "o=b" };
     var c = new CHESS();
     c.process(args);
     System.out.println(c);
@@ -82,12 +81,12 @@ public class CHESS {
   public void createData() {
     var a = new ArrayList<Comparable>();
     if (this.tv.equals("numeros")) {
-      a = new ArrayList<Comparable>(List.of(5, 8, 15, 16, 1, 2, 9, 
-      10, 11, 6, 7, 13, 14, 3, 4, 12));
+      a = new ArrayList<Comparable>(List.of(5, 8, 15, 16, 1, 2, 9,
+          10, 11, 6, 7, 13, 14, 3, 4, 12));
     } else if (this.tv.equals("caracteres")) {
       a = new ArrayList<Comparable>(List.of("m", "j", "k", "l", "e",
           "n", "c", "d", "b", "g", "h", "i", "f", "o", "p", "a"));
-    } 
+    }
     this.data = a;
     System.out.println(this.data);
   }

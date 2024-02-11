@@ -1,0 +1,57 @@
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+# Ignore vscode files
+bin
+.vscode
+out
+server
+node_modules
+*.vsix
+.DS_Store
+.vscode-test
+undefined
+target
+dist
+jre
+lombok
+bin/
+.settings
+.classpath
+.project
+
+# Ignore IDEA files
+.idea
+.editorconfig
+
+### Java ###
+*.class
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# Actividades entre clases
+actividades/

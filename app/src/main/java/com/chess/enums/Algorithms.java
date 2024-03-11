@@ -1,5 +1,11 @@
-package enums;
+package com.chess.enums;
 
+/**
+ * Enumerador para los algoritmos de ordenamiento
+ * @param letter Letra del algoritmo
+ * @param phrase Frase del algoritmo
+ * @return String
+ */
 public enum Algorithms {
   SELECT("s", "Selection Sort"),
   BUBBLE("b", "Bubble Sort"),

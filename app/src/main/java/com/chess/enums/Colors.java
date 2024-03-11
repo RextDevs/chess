@@ -1,5 +1,11 @@
-package enums;
+package com.chess.enums;
 
+/**
+ * Enumeración para los colores de las piezas
+ * @param letter Letra del color
+ * @param color Nombre del color
+ * @return String
+ */
 public enum Colors {
   NEGRAS("b", "negras"),
   BLANCAS("w", "blancas");

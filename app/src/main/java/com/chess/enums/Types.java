@@ -1,5 +1,11 @@
-package enums;
+package com.chess.enums;
 
+/**
+ * Enumerador para los tipos de piezas
+ * @param letter Letra del tipo
+ * @param type Nombre del tipo
+ * @return String
+ */
 public enum Types {
   CARACTERES("c", "caracteres"),
   NUMEROS("n", "numeros");

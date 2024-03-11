@@ -1,10 +1,17 @@
-package algorithms;
+package com.chess.algorithms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class SelectionSort {
-  public <T extends Comparable<T>> ArrayList<T> sort(T[] arr) {
+/**
+ * Clase para el algoritmo de ordenamiento por selección
+ * @param <T> Tipo de dato
+ * @return ArrayList
+ */
+public class SelectionSort extends SortAlgorithm {
+
+  @Override
+  public <T extends Comparable<T>> ArrayList<T> sort(T[] arr, Integer espera) {
     var newarr = new ArrayList<T>(Arrays.asList(arr));
     for (int i = 0; i < newarr.size() - 1; i++) {
       int min = i;
@@ -18,6 +25,13 @@ public class SelectionSort {
         newarr.set(i, newarr.get(min));
         newarr.set(min, temp);
       }
+      try {
+        Thread.sleep(espera);
+      } catch (InterruptedException e) {
+        e.printStackTrace();
+      }
+      interacciones++;
+      cooldown += espera;
     }
     return newarr;
   }

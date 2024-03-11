@@ -23,6 +23,7 @@ public class BubbleSort extends SortAlgorithm {
           newarr.set(j, newarr.get(j + 1));
           newarr.set(j + 1, temp);
         }
+        render(newarr.toArray());
         try {
           Thread.sleep(espera);
         } catch (InterruptedException e) {

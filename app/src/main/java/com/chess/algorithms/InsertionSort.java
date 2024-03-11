@@ -22,6 +22,7 @@ public class InsertionSort extends SortAlgorithm {
       while (j >= 0 && newarr.get(j).compareTo(key) > 0) {
         newarr.set(j + 1, newarr.get(j));
         j--;
+        render(newarr.toArray());
         try {
           Thread.sleep(espera);
         } catch (InterruptedException e) {

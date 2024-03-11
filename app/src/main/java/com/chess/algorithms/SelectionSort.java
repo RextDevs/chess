@@ -25,6 +25,7 @@ public class SelectionSort extends SortAlgorithm {
         newarr.set(i, newarr.get(min));
         newarr.set(min, temp);
       }
+      render(newarr.toArray());
       try {
         Thread.sleep(espera);
       } catch (InterruptedException e) {

@@ -21,4 +21,23 @@ public abstract class SortAlgorithm {
   public int getCooldown() {
     return cooldown;
   }
+
+  public void render(Object[] arr) {
+    StringBuilder sb = new StringBuilder();
+    sb.append("|--|--|--|--|--|--|--|--|\n");
+    int i = 0;
+    for (Object t : arr) {
+      sb.append("|");
+      sb.append(t);
+      if (t.toString().length() == 1) {
+        sb.append(" ");
+      }
+      i++;
+      if (i % 8 == 0) {
+        sb.append("|\n");
+        sb.append("|--|--|--|--|--|--|--|--|\n");
+      }
+    }
+    System.out.println(sb.toString());
+  }
 }
